@@ -1,8 +1,8 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet,Dimensions } from 'react-native'
 const styles = StyleSheet.create({
     carContainer: {
         width: '100%',
-        height: '100%'
+        height: Dimensions.get('window').height
     },
     image: {
         width: '100%',
@@ -17,13 +17,19 @@ const styles = StyleSheet.create({
 
     },
     title: {
-        fontSize: 40,
+        fontSize: 30,
         fontWeight: '600',
 
     },
     subTitle: {
-        fontSize: 18,
-        color: 'grey',
+        fontSize: 14,
+        color: 'whitesmoke',
+    },
+    buttonContainer:{
+        bottom:30,
+        width:'100%',
+        position:'absolute'
     }
+
 })
 export default styles
